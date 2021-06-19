@@ -1,0 +1,20 @@
+20th June 2021, Day 0: Initial Setup
+Goal: To set up initial tech stack.
+	1. Jupyter notebook
+Installations:
+	1. Python (3.7.9)
+	2. Pip (19.2.3)
+
+Commands to Install Packages:
+	pip install pandas
+	pip install matplotlib
+	python -m pip install matplotlib
+	python -m pip install seaborn
+	pip install sklearn
+	pip install xgboost
+	pip install lightgbm
+	pip install notebook
+	pip install numpy
+
+Command to launch Jupyter Notebook:
+	jupyter notebook
