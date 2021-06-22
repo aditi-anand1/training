@@ -18,3 +18,31 @@ Commands to Install Packages:
 
 Command to launch Jupyter Notebook:
 	jupyter notebook
+	
+Day 2: Data preprocessing
+		
+		
+		
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+#read_csv() # use to load or import csv file
+my_dataset=pd.read_csv("C:\\Users\\Aditi Anand\\Desktop\Training Data.csv")
+#print(my_dataset)
+
+my_dataset.shape
+
+my_dataset.isnull().sum()
+
+print(my_dataset.dtypes)
+
+from sklearn.model_selection import train_test_split
+X_train, X_test, Y_train, Y_test=train_test_split(
+    my_dataset.drop(labels=['clear_date'],axis=1),
+    my_dataset['clear_date'],
+    test_size=0.3,
+    random_state=0)
+X_train.shape , X_test.shape
+
+data_t=X_train.T
+data_t.duplicated().sum()
