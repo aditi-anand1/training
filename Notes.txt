@@ -34,8 +34,6 @@ my_dataset.shape
 
 my_dataset.isnull().sum()
 
-print(my_dataset.dtypes)
-
 from sklearn.model_selection import train_test_split
 X_train, X_test, Y_train, Y_test=train_test_split(
     my_dataset.drop(labels=['clear_date'],axis=1),
@@ -46,3 +44,42 @@ X_train.shape , X_test.shape
 
 data_t=X_train.T
 data_t.duplicated().sum()
+
+print(my_dataset.dtypes)
+
+# changing the datatype to datetime
+
+import datetime
+my_dataset['document_create_date']=pd.to_datetime(my_dataset['document_create_date'])
+my_dataset['clear_date']=pd.to_datetime(my_dataset['clear_date'])
+my_dataset['due_in_date']=pd.to_datetime(my_dataset['due_in_date'])
+my_dataset['baseline_create_date']=pd.to_datetime(my_dataset['baseline_create_date'])
+my_dataset['posting_date']=pd.to_datetime(my_dataset['posting_date'])
+my_dataset.dtypes
+
+# to make the correlation graph to observe data
+import seaborn as sns
+plt.subplots(figsize =(15,8))
+sns.heatmap(my_dataset.corr(),annot=True,cmap="PiYG")
+plt.title("Correlations Among Features",fontsize = 20);
+
+#dropping posting_id as it is not realted at all
+my_dataset=my_dataset.drop(["posting_id"],axis=1)
+
+plt.subplots(figsize =(15,8))
+sns.heatmap(my_dataset.corr(),annot=True,cmap="PiYG")
+plt.title("Correlations Among Features",fontsize = 20);
+
+# deleting col which are useless for prediction process
+my_dataset=my_dataset.drop(["business_code"],axis=1)
+my_dataset=my_dataset.drop(["cust_number"],axis=1)
+
+my_dataset=my_dataset.drop(["invoice_id"],axis=1)
+my_dataset=my_dataset.drop(["document type"],axis=1)
+my_dataset=my_dataset.drop(["posting_date"],axis=1)
+
+# to check nullvalues rows but in thsi we have null value in clear_date only so no null value is present in the col other than it 
+my_dataset.isnull().sum()
+
+my_dataset.shape
+#preprocessing of data done
