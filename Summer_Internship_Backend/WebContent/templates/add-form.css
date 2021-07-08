@@ -1,0 +1,41 @@
+.dialog-wrapper {
+    /* border: 1px solid red; */
+    background: #2A3E4C 0% 0% no-repeat padding-box;
+    box-shadow: 0px 8px 24px #00000029;
+    border-radius: 6px;
+    opacity: 1;
+    color: white;
+    z-index: 2;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000000 0% 0% no-repeat padding-box;
+    height: 100%;
+    width: 100%;
+    opacity: 0.75;
+    /* z-index: 1; */
+}
+
+.dialog-wrapper .dialog-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dialog-wrapper .dialog-form {
+    border: 1px solid blue;
+}
+
+.dialog-wrapper .dialog-footer {
+    display: flex;
+    justify-content: space-between;
+}
+

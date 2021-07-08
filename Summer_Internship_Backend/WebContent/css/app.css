@@ -1,0 +1,128 @@
+.body {
+    /* margin-top: 0px; */
+    /* margin-left: 0px; */
+    padding: 10px 10px;
+    background: transparent radial-gradient(closest-side at 50% 50%, #58687E 0%, #39495E 100%) 0% 0% no-repeat padding-box;
+    /* opacity: 1; */
+    color: white;
+    /* height: 100vh; */
+    padding: 0;
+}
+
+.app-header {
+    /* border: 2px solid greenyellow; */
+    /* text-align: center; */
+    display: flex;
+    flex-flow: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+
+.abc1 {
+    /* margin-top: 20px; */
+    /* margin-left: 30px; */
+    /* width: 120px; */
+    /* height: 46px; */
+    /* text-align: left; */
+    font: normal normal bold 39px/52px Futura PT;
+    /* letter-spacing: 0px; */
+    color: #FFFFFF;
+    /* opacity: 1; */
+}
+
+.company_logo {
+    /* margin-top: 22px;
+    margin-left: 843px;
+    width: 235px;
+    height: 50px; */
+    background-image: transparent url('./images/logo1.svg') 0% 0% no-repeat padding-box;
+    /* opacity: 1; */
+    /* position: absolute; */
+}
+
+.invoice_heading {
+    /* border: 1px solid red; */
+    font: normal normal normal 28px/32px Ubuntu;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.table-container {
+    background: #273D49CC 0% 0% no-repeat padding-box;
+    /* border: 1px solid blue; */
+    padding: 10px 10px;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.crud-buttons-container {
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+}
+
+.crud-buttons {
+    /* height: 45px; */
+    border: 1px solid #14AFF1;
+    border-radius: 10px;
+    background-color: inherit;
+    opacity: 1;
+    color: white;
+    margin: 5px;
+    text-decoration: none;
+}
+
+.table-wrapper {
+    /* border: 1px solid orange; */
+    width: 100%
+}
+
+.abc {
+    top: 16px;
+    left: 30px;
+    width: 233px;
+    /* height: 52px; */
+    background: transparent url('./images/Group 20399.svg') 0% 0% no-repeat padding-box;
+    ;
+    opacity: 1;
+    position: absolute;
+}
+
+.higradius {
+    top: 22px;
+    left: 655px;
+    width: 235px;
+    /* height: 50px; */
+    background: transparent url('./images/logo1.svg') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    position: absolute;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background: #283A46 0% 0% no-repeat padding-box;
+}
+
+.dialog-wrapper {
+    border: 1px solid red;
+}
+
+.dialog-form {
+    border-top: 2px solid blue;
+    border-bottom: 2px solid blue;
+}
+
+.clickable {
+    cursor: pointer;
+}
